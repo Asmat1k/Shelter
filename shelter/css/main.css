@@ -69,6 +69,11 @@ body {
   font-size: 15px;
   color: white; }
 
+a {
+  color: black; }
+  a:visited {
+    color: black; }
+
 .main-wrapper {
   background: url(noise_lines_transparent@2X.png), -webkit-radial-gradient(0% 0%, 100% 215.42%, #5B483A 0%, #262425 100%), #211F20;
   background: url(noise_lines_transparent@2X.png), -o-radial-gradient(0% 0%, 100% 215.42%, #5B483A 0%, #262425 100%), #211F20;
