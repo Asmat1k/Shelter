@@ -1,0 +1,11 @@
+console.log('MAIN (60):');
+console.log('1.Проверка верстки +7');
+console.log('2.Вёрстка соответствует макету +35');
+console.log('3.Требования к css +6');
+console.log('4.Интерактивность элементов +12');
+console.log('PETS (40):');
+console.log('5.Проверка верстки +7');
+console.log('6.Вёрстка соответствует макету +15');
+console.log('7.Требования к css +4');
+console.log('8.Интерактивность элементов +14');
+console.log('Total: 100\n\nDiscord: asmat1k');
