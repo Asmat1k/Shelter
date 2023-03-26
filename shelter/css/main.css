@@ -45,6 +45,11 @@ button::-moz-focus-inner {
 a, a:visited {
   text-decoration: none; }
 
+a {
+  color: black; }
+  a:visited {
+    color: black; }
+
 a:hover {
   text-decoration: none; }
 
@@ -68,11 +73,6 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: white; }
-
-a {
-  color: black; }
-  a:visited {
-    color: black; }
 
 .main-wrapper {
   background: url(noise_lines_transparent@2X.png), -webkit-radial-gradient(0% 0%, 100% 215.42%, #5B483A 0%, #262425 100%), #211F20;
@@ -250,7 +250,7 @@ a {
         margin: 60px 0;
         margin-bottom: 57px; }
         .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow {
-          background: url(/img/arrow.svg) no-repeat center;
+          background: url(img/arrow.svg) no-repeat center;
           min-width: 52px;
           min-height: 52px;
           border: 2px solid #F1CDB3;
@@ -269,7 +269,7 @@ a {
             -o-transition: .3s;
             transition: .3s; }
         .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .unactive {
-          background: url(/img/ArrowUn.svg) no-repeat center;
+          background: url(img/ArrowUn.svg) no-repeat center;
           border-color: #CDCDCD; }
           .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .unactive:hover {
             background-color: transparent;
@@ -375,7 +375,6 @@ a {
         margin-bottom: 60px; }
       .main-wrapper .content .help-wrapper .help .help__list {
         max-width: 1200px;
-        max-height: 281px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
