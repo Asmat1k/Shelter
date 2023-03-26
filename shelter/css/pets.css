@@ -127,8 +127,6 @@ body {
               color: #545454; }
               .main-wrapper .header .header-container .header-body .header-nav .header-nav__list .header-nav__item .header-nav__link:hover {
                 color: #292929;
-                border-bottom: 3px solid #F1CDB3;
-                padding-bottom: 7px;
                 -webkit-transition: .3s;
                 -o-transition: .3s;
                 transition: .3s; }
