@@ -260,33 +260,30 @@ body {
         margin: 60px 0;
         margin-bottom: 60px; }
         .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow {
+          background: url(/img/arrow.svg) no-repeat center;
           min-width: 52px;
           min-height: 52px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          text-align: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          cursor: pointer;
-          font-size: 19px;
           border: 2px solid #F1CDB3;
           border-radius: 100px;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s; }
+          .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow:last-child {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
           .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow:hover {
             background-color: #FDDCC4;
             border-color: #FDDCC4;
             -webkit-transition: .3s;
             -o-transition: .3s;
             transition: .3s; }
-          .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow:last-child {
-            padding-top: 2px; }
+        .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .unactive {
+          background: url(/img/ArrowUn.svg) no-repeat center;
+          border-color: #CDCDCD; }
+          .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .unactive:hover {
+            background-color: transparent;
+            border-color: #CDCDCD; }
         .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .unactive {
           cursor: default;
           -webkit-user-select: none;
