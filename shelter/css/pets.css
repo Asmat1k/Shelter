@@ -133,7 +133,7 @@ body {
             .main-wrapper .header .header-container .header-body .header-nav .header-nav__list .header-nav__item .header-nav__active {
               color: #000000;
               border-bottom: 3px solid #F1CDB3;
-              padding-bottom: 7px;
+              padding-bottom: 4px;
               -webkit-transition: .3s;
               -o-transition: .3s;
               transition: .3s; }
