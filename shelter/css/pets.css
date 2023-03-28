@@ -95,7 +95,10 @@ body {
       .main-wrapper .header .header-container .header-body .header-body__logo {
         cursor: pointer;
         max-width: 100%;
-        max-height: 60px; }
+        max-height: 60px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
         .main-wrapper .header .header-container .header-body .header-body__logo .header-body__title {
           display: block;
           font-family: 'Georgia';
@@ -110,6 +113,13 @@ body {
           line-height: 15px;
           letter-spacing: 0.1em;
           margin-left: 4px; }
+        .main-wrapper .header .header-container .header-body .header-body__logo:hover {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
       .main-wrapper .header .header-container .header-body .header-nav {
         font-family: 'Arial';
         max-width: 443px;
@@ -131,6 +141,7 @@ body {
                 -o-transition: .3s;
                 transition: .3s; }
             .main-wrapper .header .header-container .header-body .header-nav .header-nav__list .header-nav__item .header-nav__active {
+              cursor: default;
               color: #000000;
               border-bottom: 3px solid #F1CDB3;
               padding-bottom: 4px;
@@ -218,6 +229,9 @@ body {
           .main-wrapper .our-friends-wrapper .our-friends .cards .card:last-child {
             margin-right: 0; }
           .main-wrapper .our-friends-wrapper .our-friends .cards .card:hover {
+            background: #FFFFFF;
+            -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
             -webkit-transform: scale(1.05);
             -ms-transform: scale(1.05);
             transform: scale(1.05);
