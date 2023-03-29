@@ -138,9 +138,19 @@ body {
             font-size: 15px;
             line-height: 160%; }
             .main-wrapper .header .header-container .header-body .header-nav .header-nav__list .header-nav__item .header-nav__link {
-              color: #CDCDCD; }
+              color: #CDCDCD;
+              -webkit-transition: .3s;
+              -o-transition: .3s;
+              transition: .3s; }
               .main-wrapper .header .header-container .header-body .header-nav .header-nav__list .header-nav__item .header-nav__link:hover {
                 color: white;
+                -webkit-transition: .3s;
+                -o-transition: .3s;
+                transition: .3s; }
+              .main-wrapper .header .header-container .header-body .header-nav .header-nav__list .header-nav__item .header-nav__link:active {
+                color: white;
+                border-bottom: 3px solid #F1CDB3;
+                padding-bottom: 4px;
                 -webkit-transition: .3s;
                 -o-transition: .3s;
                 transition: .3s; }
