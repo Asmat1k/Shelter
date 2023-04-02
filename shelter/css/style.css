@@ -978,3 +978,60 @@ body {
       line-height: 130%; }
     .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body {
       margin: 42px 0 20px 0; } }
+
+@media (max-width: 290px) {
+  .main-wrapper .header .header-container {
+    padding: 15px 10px; }
+    .main-wrapper .header .header-container .header-body .header__menu {
+      width: 290px;
+      height: 100%; }
+      .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list {
+        max-width: 220px;
+        gap: 30px; }
+        .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item {
+          font-size: 25px; }
+  .main-wrapper .content .help-wrapper .help {
+    padding: 42px 0; }
+    .main-wrapper .content .help-wrapper .help .help__list {
+      max-width: 250px;
+      row-gap: 30px;
+      -webkit-column-gap: 20px;
+      column-gap: 20px; }
+      .main-wrapper .content .help-wrapper .help .help__list .help__item {
+        min-width: 110px; }
+        .main-wrapper .content .help-wrapper .help .help__list .help__item .help__body {
+          margin-top: 20px;
+          font-size: 12px;
+          line-height: 110%; }
+        .main-wrapper .content .help-wrapper .help .help__list .help__item img {
+          max-width: 40px; }
+  .main-wrapper .content .in-addition-wrapper .in-addition {
+    max-width: 240px;
+    padding: 42px 0; }
+    .main-wrapper .content .in-addition-wrapper .in-addition .in-addition__info .in-addition__card {
+      font-size: 12px; }
+    .main-wrapper .content .in-addition-wrapper .in-addition .in-addition__info .in-addition__text {
+      max-width: 280px;
+      margin: 0 auto;
+      text-align: justify; }
+  .main-wrapper .footer .footer-container .footer__column {
+    max-width: 260px; }
+    .main-wrapper .footer .footer-container .footer__column .footer__info {
+      max-width: 215px;
+      margin: 40px auto; }
+      .main-wrapper .footer .footer-container .footer__column .footer__info .footer__text {
+        font-size: 16px;
+        line-height: 115%;
+        letter-spacing: 0.06em; }
+      .main-wrapper .footer .footer-container .footer__column .footer__info:last-child {
+        margin-left: 0 auto; }
+    .main-wrapper .footer .footer-container .footer__column:nth-child(2) {
+      margin: 0; }
+      .main-wrapper .footer .footer-container .footer__column:nth-child(2) .footer__info {
+        min-width: 251px;
+        margin: 45px auto;
+        margin-bottom: 40px; }
+        .main-wrapper .footer .footer-container .footer__column:nth-child(2) .footer__info .footer__text {
+          font-size: 16px;
+          line-height: 115%;
+          letter-spacing: 0.06em; } }
