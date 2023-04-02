@@ -1,11 +1,17 @@
-console.log('MAIN (60):');
-console.log('1.Проверка верстки +7');
-console.log('2.Вёрстка соответствует макету +35');
-console.log('3.Требования к css +6');
-console.log('4.Интерактивность элементов +12');
-console.log('PETS (40):');
-console.log('5.Проверка верстки +7');
-console.log('6.Вёрстка соответствует макету +15');
-console.log('7.Требования к css +4');
-console.log('8.Интерактивность элементов +14');
-console.log('Total: 100\n\nDiscord: asmat1k');
+function burger() {
+    const menuBtn = document.querySelector('.menu__icon');
+    const menu = document.querySelector('.header__menu');
+    const menuLinks = document.querySelectorAll('.header-nav__link');
+    menuBtn.addEventListener('click', function(){
+        menuBtn.classList.toggle('active');
+        menu.classList.toggle('active');
+        document.body.classList.toggle('lock');
+            menuLinks.forEach(menuLink => menuLink.addEventListener('click', () => {
+                    menuBtn.classList.remove('active');
+                    menu.classList.remove('active');
+                    document.body.classList.remove('lock');
+                }));
+    })
+}
+
+burger();
