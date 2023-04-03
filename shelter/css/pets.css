@@ -146,6 +146,7 @@ body {
             font-size: 15px;
             line-height: 160%; }
             .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item .header-nav__link {
+              white-space: nowrap;
               color: #545454;
               -webkit-transition: .3s;
               -o-transition: .3s;
