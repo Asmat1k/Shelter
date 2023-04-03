@@ -814,6 +814,10 @@ body {
         justify-content: space-between;
         margin-bottom: 42px; } }
 
+@media (max-width: 630px) {
+  .main-wrapper .content .help-wrapper .help .help__list {
+    max-width: 420px; } }
+
 @media (max-width: 540px) {
   .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card {
     margin: 0; }
