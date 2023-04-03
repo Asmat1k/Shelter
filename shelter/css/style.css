@@ -150,6 +150,7 @@ body {
             font-size: 15px;
             line-height: 160%; }
             .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item .header-nav__link {
+              white-space: nowrap;
               color: #CDCDCD;
               -webkit-transition: .3s;
               -o-transition: .3s;
@@ -242,6 +243,7 @@ body {
       .main-wrapper .content .not-only .main-block__info .main-block__button {
         cursor: pointer;
         display: block;
+        white-space: nowrap;
         max-width: 208px;
         font-size: 17px;
         line-height: 130%;
@@ -742,7 +744,7 @@ body {
         .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card:nth-child(2) {
           margin: 0; }
   .main-wrapper .content .help-wrapper .help .help__list {
-    max-width: 430px;
+    max-width: 630px;
     -webkit-column-gap: 60px;
     column-gap: 60px;
     -webkit-box-pack: start;
@@ -799,8 +801,10 @@ body {
         max-width: 350px; }
     .main-wrapper .content .our-friends-wrapper .our-friends {
       padding: 80px 0 100px 0; }
-      .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow {
-        display: none; }
+      .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body {
+        margin-bottom: 20px; }
+        .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow {
+          display: none; }
       .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__arrows {
         display: -webkit-box;
         display: -ms-flexbox;
