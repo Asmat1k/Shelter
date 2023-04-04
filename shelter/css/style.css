@@ -161,7 +161,7 @@ body {
                 -o-transition: .3s;
                 transition: .3s; }
               .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item .header-nav__link:active {
-                color: white;
+                color: #FAFAFA;
                 border-bottom: 3px solid #F1CDB3;
                 padding-bottom: 4px;
                 -webkit-transition: .3s;
@@ -663,6 +663,7 @@ body {
     -ms-flex-align: center;
     align-items: center; }
     .main-wrapper .content .not-only .main-block__info {
+      max-width: 70%;
       margin: 60px 0 100px 0;
       text-align: left; }
       .main-wrapper .content .not-only .main-block__info .main-block__button {
@@ -680,6 +681,7 @@ body {
     -ms-flex-align: center;
     align-items: center; }
     .main-wrapper .content .in-addition-wrapper .in-addition .in-addition__info {
+      max-width: 80%;
       margin-bottom: 60px; }
     .main-wrapper .content .in-addition-wrapper .in-addition .in-addition__column {
       padding: 0; }
@@ -714,6 +716,7 @@ body {
   .main-wrapper .content .not-only {
     margin-top: 60px; }
     .main-wrapper .content .not-only .main-block__info {
+      max-width: 460px;
       margin-top: 0; }
       .main-wrapper .content .not-only .main-block__info .main-block__text {
         margin-bottom: 42px; }
@@ -743,6 +746,8 @@ body {
         margin-right: 40px; }
         .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card:nth-child(2) {
           margin: 0; }
+  .main-wrapper .content .in-addition-wrapper .in-addition .in-addition__info {
+    max-width: 380px; }
   .main-wrapper .content .help-wrapper .help .help__list {
     max-width: 630px;
     -webkit-column-gap: 60px;
@@ -753,6 +758,36 @@ body {
     .main-wrapper .content .help-wrapper .help .help__list .help__item {
       min-width: 170px; } }
 
+@media (max-width: 767.5px) {
+  .main-wrapper .header .header-container .header-body .header__menu {
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 320px;
+    height: 100%;
+    background: #292929;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list {
+      max-width: 243px;
+      margin: 248px auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 40px; }
+      .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item {
+        margin: 0;
+        font-size: 32px;
+        line-height: 160%; }
+  .main-wrapper .header .header-container .header-body .menu__icon {
+    min-height: 30px;
+    display: block; } }
+
 @media (max-width: 720px) {
   .main-wrapper .header .header-container {
     max-width: 700px;
@@ -762,34 +797,6 @@ body {
 @media (max-width: 715px) {
   .main-wrapper {
     max-width: 715px; }
-    .main-wrapper .header .header-container .header-body .header__menu {
-      position: fixed;
-      top: 0;
-      right: -120%;
-      width: 320px;
-      height: 100%;
-      background: #292929;
-      -webkit-transition: .5s;
-      -o-transition: .5s;
-      transition: .5s; }
-      .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list {
-        max-width: 243px;
-        margin: 248px auto;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        gap: 40px; }
-        .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item {
-          margin: 0;
-          font-size: 32px;
-          line-height: 160%; }
-    .main-wrapper .header .header-container .header-body .menu__icon {
-      min-height: 30px;
-      display: block; }
     .main-wrapper .content .not-only .main-block__info .main-block__title {
       text-align: center;
       margin: 0 auto;
