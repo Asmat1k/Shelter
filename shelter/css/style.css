@@ -810,20 +810,18 @@ body {
       padding: 80px 0 100px 0; }
       .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body {
         margin-bottom: 20px; }
-        .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow {
-          display: none; }
-      .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__arrows {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        margin-bottom: 42px; } }
+        .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card {
+          margin: 0; }
+          .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card:nth-child(2) {
+            display: none; } }
 
 @media (max-width: 630px) {
   .main-wrapper .content .help-wrapper .help .help__list {
-    max-width: 420px; } }
+    max-width: 420px; }
+  .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card {
+    margin: 0; }
+    .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card:nth-child(2) {
+      display: none; } }
 
 @media (max-width: 540px) {
   .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card {
@@ -847,6 +845,24 @@ body {
     padding-right: 20px; }
     .main-wrapper .content .about-wrapper .about .main-block__info .main-block__title {
       text-align: center; }
+  .main-wrapper .content .our-friends-wrapper .our-friends {
+    padding: 80px 0 100px 0; }
+    .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body {
+      margin-bottom: 20px; }
+      .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card {
+        margin: 0; }
+        .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards .card:nth-child(2) {
+          display: none; }
+      .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__body .cards-arrow {
+        display: none; }
+    .main-wrapper .content .our-friends-wrapper .our-friends .our-friends__arrows {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 42px; }
   .main-wrapper .content .help-wrapper .help {
     padding: 42px 0; }
     .main-wrapper .content .help-wrapper .help .help__title {
