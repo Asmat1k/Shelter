@@ -159,7 +159,7 @@ body {
                 -o-transition: .3s;
                 transition: .3s; }
               .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item .header-nav__link:active {
-                color: #000000;
+                color: #292929;
                 border-bottom: 3px solid #F1CDB3;
                 padding-bottom: 4px;
                 -webkit-transition: .3s;
@@ -167,7 +167,7 @@ body {
                 transition: .3s; }
             .main-wrapper .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item .header-nav__active {
               cursor: default;
-              color: #000000;
+              color: #292929;
               border-bottom: 3px solid #F1CDB3;
               padding-bottom: 4px;
               -webkit-transition: .3s;
