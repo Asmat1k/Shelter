@@ -1595,7 +1595,7 @@ body {
   }
 
   .popup .popup__body .popup__content {
-    min-width: 630px;
+    min-width: 650px;
   }
 
   .popup .popup__body .popup__content .popup__close {
@@ -1605,10 +1605,12 @@ body {
 
   .popup .popup__body .popup__content .popup__img {
     max-width: 350px;
+    border-radius: 100px;
   }
 
   .popup .popup__body .popup__content .popup__img img {
     min-width: 350px;
+    border-radius: 100px;
   }
 
   .popup .popup__body .popup__content .popup__info {
@@ -1970,7 +1972,7 @@ body {
     display: none;
   }
 
-  .content .help-wrapper .help .help__list {
+  .help-wrapper .help .help__list {
     max-width: 420px;
   }
 }
