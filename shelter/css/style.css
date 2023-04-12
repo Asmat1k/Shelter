@@ -1083,12 +1083,10 @@ h6 {
   transition: 0.8s;
 }
 
-.no-webp .popup .popup__body .popup__content .popup__close{
-  background: url("../img/close-but.png") center no-repeat; }
-
 .popup .popup__body .popup__content .popup__close {
   cursor: pointer;
   position: absolute;
+  background: url("../img/close-but.svg") center no-repeat;
   min-width: 52px;
   min-height: 52px;
   border: 2px solid #F1CDB3;
@@ -2416,5 +2414,3 @@ body {
     letter-spacing: 0.06em;
   }
 }
-
-.webp .popup .popup__body .popup__content .popup__close{ background: url(../img/close-but.webp) center no-repeat; }
