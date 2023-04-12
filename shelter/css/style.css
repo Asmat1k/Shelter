@@ -740,6 +740,9 @@ h6 {
           column-gap: 40px;
   row-gap: 30px;
   margin-bottom: 60px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .our-friends-pets-wrapper .our-friends .cards .card {
