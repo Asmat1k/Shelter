@@ -1,0 +1,368 @@
+.our-friends-wrapper {
+    background-color: #F6F6F6;
+    color: #545454;
+    width: 100%;
+    .our-friends {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 75px 0 100px 0;
+        .our-friends__title {
+            max-width: 400px;
+            font-size: 35px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            text-align: center;
+        }
+        .our-friends__body {
+            display: flex;
+            align-items: center;
+            max-height: 435px;
+            margin: 60px 0;
+            margin-bottom: 60px;
+            .cards-arrow {
+                background: url("../img/arrow.svg") no-repeat center;
+                min-width: 52px;
+                min-height: 52px;
+                border: 2px solid #F1CDB3;
+                border-radius: 100px;
+                &:last-child {
+                    transform: rotate(180deg);
+                }
+                transition: .3s;
+                &:hover {
+                    background-color: #FDDCC4;
+                    border-color: #FDDCC4;
+                    transition: .3s;
+                }
+            }
+            .carousel-wrapper {
+                max-width: 990px;
+                margin: 0 20px;
+                overflow: hidden;
+                .carousel {
+                    display: flex;
+                    position: relative;
+                    left: -990px;
+                    .cards {
+                        max-width: 990px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        text-align: center;
+                        column-gap: 90px;
+                        .card {
+                            display: block;
+                            cursor: pointer;
+                            max-width: 270px;
+                            max-height: 100%;
+                            background: #FAFAFA;
+                            border-radius: 9px;
+                            .card__body {
+                                .card__title {
+                                    font-size: 20px;
+                                    line-height: 23px; 
+                                    letter-spacing: 0.06em;
+                                    text-align: center;
+                                    margin: 30px 0;
+                                    margin-bottom: 28px;
+                                }
+                                .card__button {
+                                    display: block;
+                                    max-width: 187px;
+                                    font-size: 17px;
+                                    line-height: 130%;
+                                    letter-spacing: 0.06em;                                    
+                                    border: 2px solid #F1CDB3;
+                                    border-radius: 100px;
+                                    padding: 14px 45px;
+                                    margin: 30px auto;
+                                    white-space: nowrap;
+                                    transition: .3s;
+                                    &:hover {
+                                        background: #FDDCC4;
+                                        border-color: #FDDCC4;
+                                        transition: .3s;
+                                    }
+                                }
+                            }
+                            transition: .3s;
+                            &:hover {
+                                > .card__body {
+                                    > .card__button {
+                                        background: #FDDCC4;
+                                        border-color: #FDDCC4;
+                                        transition: .3s;
+                                    }
+                                }
+                                background: #FFFFFF;
+                                box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+                                transition: .3s;
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+        .our-friends__arrows {
+            display: none;
+            min-width: 184px;
+            .cards-arrow {
+                background: url("../img/arrow.svg") no-repeat center;
+                min-width: 52px;
+                min-height: 52px;
+                border: 2px solid #F1CDB3;
+                border-radius: 100px;
+                &:last-child {
+                    transform: rotate(180deg);
+                }
+                transition: .3s;
+                &:hover {
+                    background-color: #FDDCC4;
+                    border-color: #FDDCC4;
+                    transition: .3s;
+                }
+            }
+        }
+        .our-friends__button {
+            font-size: 17px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            padding: 15px 45px;
+            background: #F1CDB3;
+            border-radius: 100px;
+            transition: .3s;
+            &:hover {
+                background: #FDDCC4;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+@keyframes moveR {
+    from {left: -990px;}
+    to {left: -1980px;}
+}
+  
+.transition-right {
+    animation-name: moveR;
+    animation-duration: 1s;
+}
+
+@keyframes moveL {
+    from {left: -990px;}
+    to {left: 0px;}
+}
+  
+.transition-left {
+    animation-name: moveL;
+    animation-duration: 1s;
+}
+
+@media (max-width: 1200px) {
+    .our-friends-wrapper {
+        .our-friends {
+            .our-friends__body {
+                .carousel-wrapper {
+                    max-width: 830px;
+                    .carousel {
+                        left: -830px;
+                        .cards {
+                           max-width: 830px;
+                           column-gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes moveR {
+        from {left: -830px;}
+        to {left: -1660px;}
+    }
+      
+    @keyframes moveL {
+        from {left: -830px;}
+        to {left: 0px;}
+    }
+}
+
+@media (max-width: 980px) {
+    .our-friends-wrapper {
+        .our-friends {
+            .our-friends__body {
+                .carousel-wrapper {
+                    max-width: 570px;
+                    .carousel {
+                        left: -570px;
+                        .cards {
+                           max-width: 570px;
+                           column-gap: 30px;
+                           .card {
+                            &:nth-child(3) {
+                                display: none;
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+    @keyframes moveR {
+        from {left: -570px;}
+        to {left: -1140px;}
+    }
+      
+    @keyframes moveL {
+        from {left: -570px;}
+        to {left: 0px;}
+    }
+}
+
+@media (max-width: 768px) {
+    .our-friends-wrapper {
+        .our-friends {
+            padding: 80px 0 100px 0;
+            .our-friends__body {
+                .carousel-wrapper {
+                    .carousel-wrapper {
+                        .carousel {
+                            .cards {
+                               max-width: 870px;
+                               column-gap: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+        
+@media (max-width: 720px) {
+    .our-friends-wrapper {
+        .our-friends {
+            padding: 80px 0 100px 0;
+            .our-friends__body {
+                margin-bottom: 20px;
+                .carousel-wrapper {
+                    max-width: 270px;
+                    .carousel {
+                        left: -270px;
+                        .cards {
+                            max-width: 270px;
+                            .card {
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes moveR {
+        from {left: -270px;}
+        to {left: -540px;}
+    }
+      
+    @keyframes moveL {
+        from {left: -270px;}
+        to {left: 0px;}
+    }
+}
+   
+
+@media (max-width: 630px) {
+    .our-friends-wrapper {
+        .our-friends {
+            .our-friends__body {
+                .carousel-wrapper {
+                    .carousel {
+                        .cards {
+                            .card {
+                                margin: 0;
+                                &:nth-child(2) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+
+@media (max-width: 540px) {
+    .our-friends-wrapper {
+        .our-friends {
+            .our-friends__body {
+                .carousel-wrapper {
+                    .carousel {
+                        .cards {
+                            .card {
+                                margin: 0;
+                                &:nth-child(2) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media (max-width: 460px) {
+    .our-friends-wrapper {
+        .our-friends {
+            padding: 80px 0 100px 0;
+            .our-friends__body {
+                margin-bottom: 20px;
+                .carousel-wrapper {
+                    .carousel {
+                        .cards {
+                            .card {
+                                margin: 0;
+                                &:nth-child(2) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cards-arrow {
+                    display: none;
+                }
+            }
+            .our-friends__arrows {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 42px;
+            }
+        }
+    }
+}
+            
+
+@media (max-width: 365px) {
+    .our-friends-wrapper {
+        .our-friends {
+            max-width: 300px;
+            padding: 42px 0;
+            .our-friends__title {
+                font-size: 25px;
+                line-height: 130%;
+            }
+            .our-friends__body {
+                margin: 42px 0 20px 0;
+            }
+        }
+    }
+}

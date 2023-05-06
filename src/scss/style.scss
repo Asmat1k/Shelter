@@ -1,0 +1,66 @@
+// Если есть, что подключить
+// @import "fonts";
+
+@import "nullstyle";
+
+@import "header";
+@import "header-pets";
+
+@import "block";
+@import "not-only";
+@import "about";
+@import "our-friends";
+@import "our-friends-pets";
+@import "help";
+@import "in-addition";
+@import "popup";
+
+@import "footer";
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;   
+}
+
+.main-wrapper {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content {
+    a:visited {
+        color: black;
+    }
+}
+
+// Добавление функционала
+
+.lock {
+    overflow: hidden;
+}
+
+.shadow {
+    &.active {
+        opacity: 0.6;
+        transition: opacity .7s linear;
+        left: 0;
+    }
+    position: fixed;
+    z-index: 3;
+    top:0;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    background: #292929;;
+    opacity: 0;
+    transition: opacity .7s linear;
+}

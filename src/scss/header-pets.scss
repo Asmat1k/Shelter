@@ -1,0 +1,94 @@
+.header-pets {
+    background-color: white;
+    .header-container {
+        padding-bottom: 30px;
+        .header-body {
+            .header-body__logo {
+                .header-body__title {
+                    color: #545454;
+                }
+                .header-body__subtitle {
+                    color: #292929;
+                }
+            }
+            .header__menu {
+                .header-nav {
+                    .header-nav__list {
+                        .header-nav__item {
+                            .header-nav__link {
+                                white-space: nowrap;
+                                color: #545454;
+                                transition: .3s;
+                                &:hover {
+                                    color: #292929;
+                                    transition: .3s;
+                                }
+                                &:active {
+                                    color: #292929;
+                                    border-bottom: 3px solid #F1CDB3;
+                                    padding-bottom: 4px;
+                                    transition: .3s;
+                                }
+                            }
+                            .header-nav__active {
+                                cursor: default;
+                                color: #292929;
+                                border-bottom: 3px solid #F1CDB3;
+                                padding-bottom: 4px;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu__icon {
+            & span {
+               background-color: #000000;
+            }
+        }    
+    }
+}
+
+@media (max-width: 767.5px) {
+    .header-pets {
+        .header-container {
+            .header-body {
+                .header__menu {  
+                    .header-nav {
+                        .header-nav__list {
+                            .header-nav__item {
+                                .header-nav__link {
+                                    color: #CDCDCD;
+                                    transition: .3s;
+                                    &:hover {
+                                        color: white;
+                                        transition: .3s;
+                                    }
+                                    &:active {
+                                        color: #FAFAFA;
+                                        border-bottom: 3px solid #F1CDB3;
+                                        padding-bottom: 4px;
+                                        transition: .3s;
+                                    }
+                                }
+                                .header-nav__active {
+                                    cursor: default;
+                                    color: white;
+                                    border-bottom: 3px solid #F1CDB3;
+                                    padding-bottom: 4px;
+                                    transition: .3s;
+                                }
+                            }
+                        }               
+                    }
+                }
+            }
+            .menu__icon.active {
+                & span {
+                   background-color: wheat;
+                }
+            }    
+        }
+    }
+}

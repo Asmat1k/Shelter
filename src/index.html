@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{
+        "title":"Shelter"
+    })
+<body>
+    <div class="main-wrapper">
+        @@include('html/header.html', {})
+        <main class="content">
+            @@include('html/not-only.html', {}) 
+            @@include('html/about.html', {}) 
+            @@include('html/our-friends.html', {}) 
+            @@include('html/help.html', {}) 
+            @@include('html/in-addition.html', {}) 
+        </main>
+        @@include('html/footer.html', {})
+        <div class="shadow"></div>
+        @@include('html/popup.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

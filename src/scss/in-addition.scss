@@ -1,0 +1,162 @@
+.in-addition-wrapper {
+    background-color: #F6F6F6;
+    color: #545454;
+    .in-addition {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 990px;
+        padding: 80px 0 100px 0;
+        margin: 0 auto;
+        .in-addition__column {
+            padding-top: 10px;
+        }
+        .in-addition__info {
+            max-width: 380px;
+            .in-addition__title {
+                max-width: 300px;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 0.06em; 
+            }
+            .in-addition__subtitle {
+                font-size: 15px;
+                line-height: 110%;
+                letter-spacing: 0.06em;
+                margin: 19px 0;
+            }
+            .in-addition__card {
+                display: flex;
+                max-width: 350px;
+                font-size: 20px;
+                line-height: 115%;
+                letter-spacing: 0.06em;
+                background: #F1CDB3;
+                border-radius: 9px;
+                padding: 10px 15px;
+                margin-bottom: 20px;
+                .in-addition__number {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 15px;
+                }
+                transition: .3s;
+                &:hover {
+                    color:#000000;
+                    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+                    transform: scale(1.01);
+                    transition: .3s;
+                }
+            }
+            .in-addition__text {
+                font-family: 'Arial';
+                font-style: italic;
+                font-size: 12px;
+                line-height: 18px;
+                color: #B2B2B2;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 980px) {
+    .in-addition-wrapper {
+        .in-addition {
+            flex-direction: column-reverse;
+            align-items: center;
+            .in-addition__info {
+                max-width: 80%;
+                margin-bottom: 60px;
+            }
+            .in-addition__column {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .in-addition-wrapper {
+        .in-addition {
+            .in-addition__info {
+                max-width: 380px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .in-addition-wrapper {
+        .in-addition {
+            .in-addition__column {
+                & img {
+                    max-width: 350px;
+                }
+            }
+        }
+    } 
+}
+
+
+@media (max-width: 460px) {
+    .in-addition-wrapper {
+        .in-addition {
+            max-width: 320px;
+            padding: 42px 0;
+            .in-addition__info {
+                max-width: 300px;
+                margin-bottom: 42px;
+                .in-addition__title {
+                    max-width: 220px;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 25px;
+                    line-height: 130%;
+                }
+                .in-addition__subtitle {
+                    max-width: 273px;
+                    margin: 23px auto;
+                    text-align: center;
+                    letter-spacing: normal;
+                }
+                .in-addition__card {
+                    max-width: 281px;
+                    margin: 20px auto;
+                    padding: 10px 15px;
+                    font-size: 15px;
+                    line-height: 110%;
+                }
+                .in-addition__text {
+                    max-width: 280px;
+                    margin: 0 auto;
+                    text-align: justify;
+                }
+            }
+            .in-addition__column {
+                padding: 0;
+                & img {
+                    max-width: 260px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 290px) {
+    .in-addition-wrapper {
+        .in-addition {
+            max-width: 240px;
+            padding: 42px 0;
+            .in-addition__info {
+                .in-addition__card {
+                    font-size: 12px;
+                }
+                .in-addition__text {
+                    max-width: 280px;
+                    margin: 0 auto;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
