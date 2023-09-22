@@ -1,5 +1,7 @@
 ## Project "Shelter"
 
+![image](https://github.com/Asmat1k/Shelter/assets/113438950/ca20f140-f939-40de-8f14-aec9695dfec2)
+
 ### Features
 - Burger menu;
 - Popup cards;
